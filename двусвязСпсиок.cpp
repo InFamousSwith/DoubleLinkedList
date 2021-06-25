@@ -107,8 +107,6 @@ public:
         --number;
     }
 
-    /// [1] -> [2] ->  <-[6]-> [It] -> [4] -> [5]
-
     void push_in_place(int place, int newValue) {
         if (place < 1 || place > number) {
             cout << "Error" << endl;
@@ -142,7 +140,6 @@ public:
         }
     }
 
-    /// [1] -> [2] -> [It] -> [4] -> [5]
 
     void pop_from_place(int place) {
         if (place < 1 || place > number) {
@@ -213,7 +210,6 @@ public:
         cout << endl;
     }
 
-    /// [1] -> [2] -> [3] -> [4]
 
     ~List() {
         while (number > 0) {
